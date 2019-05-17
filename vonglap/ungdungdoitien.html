@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<body>
+    <input type="text" size="20" id="money">
+     <select id="a1" >
+                <option value="VND">VND</option>
+                <option value="USD">USD</option>
+        </select>
+        <select id="a2">
+            <option value="USD">USD</option>
+            <option value="VND">VND</option>
+        </select>
+        <button type="button" onclick="chuyentien()">chuyentien</button>
+        <div id="ketqua">
+            
+        </div>
+        <script>
+            let a,b,c,result;
+            function chuyentien(){
+            a= document.getElementById("a1").value
+           b=  document.getElementById("a2").value
+           c=document.getElementById("money").value
+             if(a == "VND"&&b=="USD"){
+                result = parseInt(money)/23000
+                document.getElementById("ketqua").innerHTML  =result;
+             }else if(a=="USD"&&b=="VND"){
+                 result =parseInt(money)*23000  
+                 document.getElementById("ketqua").innerHTML =result;
+             }
+            }
+        </script>
+</body>
+</html

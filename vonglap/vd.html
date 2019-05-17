@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+</head>
+
+<body>
+<script>
+    let input =parseInt(prompt("nhap vao 1 so "))
+    let i;
+    for(i=1;i<input;i++){
+    if(Prime(i)==true){
+        document.write(i+"  ")
+         }
+          
+    }
+  
+    function Prime(number){
+        if(number<2){
+            return false
+        }else{
+            for( i=2;i<number;i++){
+                if(number%i==0){
+                    return false
+                }
+            }
+        }
+        return true
+    }
+  
+    
+
+</script>
+
+</body>
+</html>

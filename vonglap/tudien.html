@@ -1,0 +1,28 @@
+!DOCTYPE html>
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF=8">
+        
+        </html>
+        <input type="text" size="20" id="Tratu">
+        <button type="button" onclick="chuyen()">言葉を調べる</button>
+      
+
+    <body>
+        <script>
+            let jpan =["こんにちは","あなたは何歳ですか","い ま","これ","それ","あれ"]
+            let Vietnamese = ["xin chao","ban bao nhieu tuoi","bay gio","cai nay","cai do","cai kia"]
+            function chuyen(){
+                let tu = document.getElementById("Tratu").value
+                for(let i=0;i<Vietnamese.length;i++){
+                    if(tu==Vietnamese[i]){
+                        alert(jpan[i])
+                    }else{
+                        alert("khong co kq")
+                    }
+                }
+            }             
+            </script>
+    </body>
+               

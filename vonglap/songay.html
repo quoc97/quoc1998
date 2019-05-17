@@ -1,0 +1,50 @@
+
+<!DOCTYPE html>
+<html>
+<body>
+    <input type="text" size="20" id="month">
+    <button type="button"  onclick="tinhNgay()">tinh so ngay</button>
+        <script>
+            let inputMonth
+            let month
+            function tinhNgay(){
+                inputMonth = document.getElementById("month").value
+                month= parseInt(inputMonth)
+                switch(month){
+                    case 1:
+                    case 3:
+                    case 5:
+                    case 6:
+                    case 7:
+                    case 9:
+                    case 11:
+                    document.write("thang co 31 ngay")
+                    break
+                    case 4:
+                    case 8:
+                    case 10:
+                    case 12:
+                    document.write("thang co 30 ngay")
+                    break
+                    case 2:
+                    document.write("co 28 ngay hoac 29 ngay")
+                    break
+                    default:
+                    document.write("sai")
+
+                   
+
+
+                    
+             
+                }
+
+
+            }
+
+        
+    
+        </script>
+
+</body>
+</html

@@ -1,0 +1,21 @@
+
+<!DOCTYPE html>
+<html>
+<body>
+        <img id="a" src="https://salt.tikicdn.com/cache/200x200/ts/product/39/1d/f6/a50462022b924d6fbb3dab9d0e562dd1.jpg"style = "position:absolute; left: 70px;">
+        <button type="button" onclick="chuyen()">dichuyen</button>
+    
+        <script>
+                let b
+                function init(){
+                        b = document.getElementById("a")  
+                }
+                function chuyen(){
+                        
+                        b.style.position.left = parseInt(b.style.position.left)+10+"px"
+                }
+                window.onload = init();
+        </script>
+
+</body>
+</html>
