@@ -11,6 +11,7 @@
 
     <body>
         <script>
+            let count =0
             let jpan =["こんにちは","あなたは何歳ですか","い ま","これ","それ","あれ"]
             let Vietnamese = ["xin chao","ban bao nhieu tuoi","bay gio","cai nay","cai do","cai kia"]
             function chuyen(){
@@ -18,9 +19,12 @@
                 for(let i=0;i<Vietnamese.length;i++){
                     if(tu==Vietnamese[i]){
                         alert(jpan[i])
-                    }else{
+                        return
+                    }if(count==0){
                         alert("khong co kq")
                     }
+                    
+                    
                 }
             }             
             </script>

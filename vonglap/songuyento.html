@@ -6,19 +6,23 @@
 <body>
 <script>
     let input =parseInt(prompt("nhap vao 1 so "))
-    let i;
-    for(i=1;i<input;i++){
-    if(Prime(i)==true){
-        document.write(i+"  ")
-         }
-          
+    let i=2
+    let dem =0
+    while(input>dem){
+        if(Prime(input)==true){
+            document.write(i)
+            dem++
+        }
+        i++
     }
+    
+
   
     function Prime(number){
         if(number<2){
             return false
         }else{
-            for( i=2;i<number;i++){
+            for( let i=2;i<number;i++){
                 if(number%i==0){
                     return false
                 }
